@@ -1,4 +1,7 @@
 import Home from './routes/Home';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import ErrorPage from './routes/ErrorPage';
+import MonsterPage from './routes/MonsterPage';
 
 function App() {
   return (
@@ -7,7 +10,13 @@ function App() {
         <h1>Hyrule's Monsters</h1>
       </header>
       <main>
-        <Home />
+        <Router>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/monster/:id' element={<MonsterPage />}/>
+            <Route path='*' element={<ErrorPage />}/>
+          </Routes>
+        </Router>
       </main>
     </div>
   );

@@ -47,8 +47,8 @@ function Home() {
           return (
             <Monster 
               name={monster.name} 
-              image={monster.image} 
-              description={monster.description}
+              image={monster.image}
+              id={monster.id}
               key={monster.id}
             />
           );
