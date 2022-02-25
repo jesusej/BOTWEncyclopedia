@@ -4,7 +4,6 @@ import Monster from './../components/Monster';
 
 function Home() {
   
-  const [isLoading, setIsLoading] = useState(true);
   const [monsters, setMonsters] = useState([]);
   const [searchWord, setSearchWord] = useState("");
 
@@ -15,7 +14,6 @@ function Home() {
   const loadData = () => {
     Axios.get("https://botw-compendium.herokuapp.com/api/v2/category/monsters").then((response) => {
       setMonsters(response.data.data);
-      setIsLoading(false);
     })
   }
 
@@ -27,7 +25,7 @@ function Home() {
     return a.id - b.id;
   })
 
-  if(isLoading){
+  if(monsters.length < 1){
     return (
       <div className='Home'>
         <h3>Now loading...</h3>
