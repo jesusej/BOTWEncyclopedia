@@ -12,8 +12,8 @@ function App() {
       <main>
         <Router>
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/monster/:id' element={<MonsterPage />}/>
+            <Route path='/BOTWEncyclopedia' element={<Home />} />
+            <Route path='/BOTWEncyclopedia/monster/:id' element={<MonsterPage />}/>
             <Route path='*' element={<ErrorPage />}/>
           </Routes>
         </Router>
