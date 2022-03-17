@@ -1,18 +1,24 @@
 import React from 'react'
 
 function DynamicTable({title, array}) {
+  let row = -1;
   return (
     <table>
       <thead>
-        <th>{title}</th>
+        <tr>
+          <th>{title}</th>
+        </tr>
       </thead>
-      {array.map((data) => {
-        return (
-          <tr>
-            <td>{data}</td>
-          </tr>
-        );
-      })}
+      <tbody>
+        {array.map((data) => {
+          row++;
+          return (
+            <tr key={row}>
+              <td>{data}</td>
+            </tr>
+          );
+        })}
+      </tbody>
     </table>
   )
 }

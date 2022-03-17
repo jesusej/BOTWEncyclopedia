@@ -16,7 +16,6 @@ function MonsterPage() {
   const loadEntry = () => {
     Axios.get(`https://botw-compendium.herokuapp.com/api/v2/entry/${id}`).then((response) => {
       setMonster(response.data.data);
-      console.log(response.data.data);
       setLoading(false);
     })
   }
@@ -32,13 +31,13 @@ function MonsterPage() {
             <p>{monster.description}</p>
           </div>
           <div className='commonLocations'>
-            {monster.common_locations && <DynamicTable 
+            {((monster.common_locations) && (monster.common_locations > 0)) && <DynamicTable 
               title="Common locations"
               array={monster.common_locations}
             />}
           </div>
           <div className='drops'>
-            {monster.drops.length > 0 && <DynamicTable 
+            {((monster.drops) && (monster.drops.length > 0)) && <DynamicTable 
               title="Drops"
               array={monster.drops}
             />}
