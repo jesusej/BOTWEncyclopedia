@@ -31,7 +31,7 @@ function MonsterPage() {
             <p>{monster.description}</p>
           </div>
           <div className='commonLocations'>
-            {((monster.common_locations) && (monster.common_locations > 0)) && <DynamicTable 
+            {((monster.common_locations) && (monster.common_locations.length > 0)) && <DynamicTable 
               title="Common locations"
               array={monster.common_locations}
             />}
