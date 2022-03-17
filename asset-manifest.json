@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/BOTWEncyclopedia/static/js/main.40a77a45.chunk.js",
-    "main.js.map": "/BOTWEncyclopedia/static/js/main.40a77a45.chunk.js.map",
+    "main.js": "/BOTWEncyclopedia/static/js/main.43bf1132.chunk.js",
+    "main.js.map": "/BOTWEncyclopedia/static/js/main.43bf1132.chunk.js.map",
     "runtime-main.js": "/BOTWEncyclopedia/static/js/runtime-main.324acfe1.js",
     "runtime-main.js.map": "/BOTWEncyclopedia/static/js/runtime-main.324acfe1.js.map",
-    "static/js/2.85572282.chunk.js": "/BOTWEncyclopedia/static/js/2.85572282.chunk.js",
-    "static/js/2.85572282.chunk.js.map": "/BOTWEncyclopedia/static/js/2.85572282.chunk.js.map",
+    "static/js/2.df1c3a2d.chunk.js": "/BOTWEncyclopedia/static/js/2.df1c3a2d.chunk.js",
+    "static/js/2.df1c3a2d.chunk.js.map": "/BOTWEncyclopedia/static/js/2.df1c3a2d.chunk.js.map",
     "static/js/3.5205877b.chunk.js": "/BOTWEncyclopedia/static/js/3.5205877b.chunk.js",
     "static/js/3.5205877b.chunk.js.map": "/BOTWEncyclopedia/static/js/3.5205877b.chunk.js.map",
     "index.html": "/BOTWEncyclopedia/index.html",
-    "static/js/2.85572282.chunk.js.LICENSE.txt": "/BOTWEncyclopedia/static/js/2.85572282.chunk.js.LICENSE.txt"
+    "static/js/2.df1c3a2d.chunk.js.LICENSE.txt": "/BOTWEncyclopedia/static/js/2.df1c3a2d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.324acfe1.js",
-    "static/js/2.85572282.chunk.js",
-    "static/js/main.40a77a45.chunk.js"
+    "static/js/2.df1c3a2d.chunk.js",
+    "static/js/main.43bf1132.chunk.js"
   ]
 }
